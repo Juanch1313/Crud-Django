@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block titulo %} Inicio {% endblock titulo %}
+
+{% block contenido %} 
+
+<div class="row align-items-md-stretch">
+    <div class="col-md-12">
+        <div class="h-100 p-5 text-black bg-light border rounded-3">
+            <h2>Bienvenidos al sitio de la libreria</h2>
+            <p>Empezar a ingresar libros</p>
+            <a class="btn btn-outline-primary" href='{% url 'libros' %}'>Empezar</a>
+        </div>
+    </div>
+</div>
+
+{% endblock contenido %}
